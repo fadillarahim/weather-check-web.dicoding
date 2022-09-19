@@ -1,0 +1,107 @@
+*, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.search-desc{
+    font-size: 14pt;
+}
+
+/*Style search container*/
+.search-container {
+    max-width: 800px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    border-radius: 10px;
+    display: flex;
+    position: sticky;
+    top: 10px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.search-container > input {
+    width: 75%;
+    padding: 16px;
+    border: 0;
+    border-bottom: 1px solid #25316D;
+    font-weight: bold;
+    color: #25316D;
+}
+
+.search-container > input:focus {
+    outline: 0;
+    border-bottom: 2px solid #25316D;
+}
+
+.search-container > input:focus::placeholder {
+    font-weight: bold;
+    color: #25316D;
+}
+
+.search-container > input::placeholder {
+    color: #25316D;
+    font-weight: normal;
+}
+
+.search-container > button {
+    width: 23%;
+    cursor: pointer;
+    margin-left: auto;
+    padding: 16px;
+    background-color: #25316D;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+}
+
+.search-container > button:hover{
+    background-color: #97D2EC;
+    color: #25316D;
+}
+
+@media screen and (max-width: 550px) {
+    .search-container {
+    flex-direction: column;
+    position: static;
+    }
+
+    .search-container > input {
+    width: 100%;
+    margin-bottom: 12px;
+    }
+
+    .search-container > button {
+    width: 100%;
+    }
+}
+
+/*Style untuk card-result*/
+.card-result{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 30rem;
+    padding: 10px;
+    margin: 20px auto;
+    background-color: #25316D;
+    color: white;
+}
+
+.result{
+    width: 100% ;
+    margin: 20px auto;
+    padding: 10px;
+    display: flex;
+    
+}
+
+.result .eror-message{
+    text-align: center;
+    width: max-content;
+    height: 20vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
