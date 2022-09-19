@@ -4,7 +4,7 @@ function main(){
     const buttonSearch = document.querySelector('#searchButtonElement');
     const inputKeyword = document.querySelector('#searchElement');
 
-    const getData = () =>{
+    buttonSearch.addEventListener('click', () => {
         const inputKeyword = document.querySelector('#searchElement');
 
         fetch(`https://api.openweathermap.org/data/2.5/weather?q=${inputKeyword.value}&appid=b578cffbc19e48933e718b9e1e28a2cc&units=metric`)
@@ -34,9 +34,7 @@ function main(){
                 `;
             });
     inputKeyword.value = null;
-    };
-
-    buttonSearch.addEventListener('click', getData());
+    });
 }
 
 export default main;
