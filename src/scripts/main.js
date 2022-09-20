@@ -1,8 +1,6 @@
-//document.body.style.backgroundImage = 'url(bg.jpg)';
 
 function main(){
     const buttonSearch = document.querySelector('#searchButtonElement');
-    const inputKeyword = document.querySelector('#searchElement');
 
     buttonSearch.addEventListener('click', () => {
         const inputKeyword = document.querySelector('#searchElement');
